@@ -2,7 +2,7 @@ from sqlalchemy import create_engine, Column, ForeignKey, Integer, String, DateT
 from sqlalchemy.orm import relationship, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
-engine = create_engine('postgresql://bararide:nikita0642@localhost/postgres')
+engine = create_engine('path_to_db')
 
 Base = declarative_base()
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
